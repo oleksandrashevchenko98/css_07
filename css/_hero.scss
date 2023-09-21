@@ -1,0 +1,30 @@
+.banner {
+  @include flex(row, space-between, center);
+}
+img.banner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.cont-banner-text {
+  @include flex(column, flex-start, flex-start);
+  gap: 30px;
+  padding-left: 14.5%;
+  color: $main-color;
+  position: absolute;
+  z-index: 2;
+  .banner-text {
+    width: 55%;
+    line-height: 20px;
+  }
+  .banner__heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+  }
+  .card-btn {
+    width: 35%;
+    background: $accent-color;
+  }
+}

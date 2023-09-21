@@ -1,0 +1,49 @@
+.header {
+  background: $main-color;
+  .nav {
+    display: flex;
+  }
+  .menu {
+    background: $primary-color;
+  }
+  .nav__item {
+    padding: 17px 15px 16px;
+    &:hover {
+      text-decoration: underline;
+    }
+    .nav__link {
+      color: #000;
+    }
+  }
+  .nav--main {
+    border-top: 1px solid $primary-color;
+    background-color: $main-color;
+    .nav__item {
+      padding: 30px 1.5%;
+    }
+  }
+}
+
+.menu,
+.nav--main-wrap,
+.nav--main {
+  @include flex(row, center, center);
+}
+
+.sides {
+  @include flex(row, space-around, center);
+  padding: 20px 0;
+  background: $main-color;
+  .logo {
+    gap: 20px;
+  }
+  .logo__name {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 3.6px;
+    text-align: left;
+    color: $accent-color;
+    text-transform: uppercase;
+  }
+}

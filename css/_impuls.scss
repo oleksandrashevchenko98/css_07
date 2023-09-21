@@ -1,0 +1,14 @@
+.impuls {
+  padding: 90px 21% 0 21%;
+  margin: 0 auto;
+  column-count: 4;
+  a {
+    width: 110%;
+    height: 120px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+    background-color: $main-color;
+    border: 1px solid $primary-color;
+  }
+}

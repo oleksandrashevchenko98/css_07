@@ -1,0 +1,89 @@
+.offers {
+  padding: 80px 21%;
+
+  h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .goods {
+    gap: 30px;
+    @include flex(row, center, center);
+    .goods__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 25px;
+      background: $main-color;
+      max-width: 225px;
+      text-align: center;
+      .item__img {
+        width: 125px;
+      }
+      .item__name {
+        color: #333;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .item__price {
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 1.05px;
+      }
+      .item__btn {
+        border-color: $accent-color;
+        background: $accent-color;
+        color: $main-color;
+        padding: 9px 53px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.bonus {
+  gap: 30px;
+  padding: 0 21%;
+  @include flex(row, center, center);
+  .bonus__item {
+    width: 80%;
+    height: 212px;
+    display: flex;
+    background-color: $accent-color;
+  }
+  .bonus__text {
+    padding-top: 35px;
+    padding-left: 7%;
+    color: $main-color;
+    h3 {
+      padding-bottom: 25px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    p {
+      width: 65%;
+    }
+  }
+  button {
+    width: 80%;
+    margin-top: 25px;
+    margin-left: 7%;
+    color: $main-color;
+    border: 1 px solid $main-color;
+    background-color: $accent-color;
+  }
+  .btn.email {
+    border: $main-color;
+    color: #c4c4c4;
+    background-color: $main-color;
+  }
+  .bonus__span {
+    height: 100px;
+    padding-top: 13%;
+    padding-right: 20%;
+    img {
+      width: 180%;
+    }
+  }
+}
