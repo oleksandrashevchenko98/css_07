@@ -27,11 +27,12 @@ body,
 .btn.btn-link {
   color: #fff;
 }
-.nav {
-  margin-left: 35%;
+.menu .container {
+  margin: 0 auto;
+  width: 50%;
 }
 .nav__item {
-  float: inline-start;
+  float: left;
 }
 .nav::after,
 .nav--main::after {
